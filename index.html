@@ -3,244 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- SEO META TAGS -->
 <title>Milan Obradors — Cybersécurité & Réseau Freelance | Toulouse</title>
 <meta name="description" content="Étudiant en cybersécurité proposant des services de pentest, audit de sécurité, configuration réseau et formation pour PME et particuliers. Tarifs accessibles, basé à Toulouse, remote OK.">
-<meta name="keywords" content="cybersécurité freelance toulouse, pentest freelance, audit sécurité pas cher, configuration réseau toulouse, formation phishing, site web toulouse, cybersecurity student freelance france">
+<meta name="keywords" content="cybersécurité freelance toulouse, pentest freelance, audit sécurité pas cher, configuration réseau toulouse, formation phishing, cybersecurity student freelance france">
 <meta name="author" content="Milan Obradors">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://milan-sec.fr">
-
-<!-- OPEN GRAPH (réseaux sociaux) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://milan-sec.fr">
 <meta property="og:title" content="Milan Obradors — Cybersécurité & Réseau Freelance">
 <meta property="og:description" content="Services de cybersécurité accessibles pour PME et particuliers. Pentest, audit, réseau, formation. Toulouse & remote.">
 <meta property="og:locale" content="fr_FR">
-
-<!-- TWITTER CARD -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Milan Obradors — Cybersécurité Freelance">
 <meta name="twitter:description" content="Pentest, audit sécu, réseau, formation. Tarifs débutant, sérieux pro. Toulouse & remote.">
-
-<!-- SCHEMA.ORG (Google rich results) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Milan Obradors",
-  "jobTitle": "Étudiant Cybersécurité & Freelance",
-  "url": "https://milan-sec.fr",
-  "email": "obrsmilan@gmail.com",
-  "sameAs": [
-    "https://www.linkedin.com/in/milan-obradors",
-    "https://github.com/milan-sec"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Toulouse",
-    "addressCountry": "FR"
-  },
-  "knowsAbout": ["Cybersécurité", "Pentest", "Réseaux", "Linux", "OWASP"]
-}
-</script>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Milan Obradors","jobTitle":"Étudiant Cybersécurité & Freelance","url":"https://milan-sec.fr","email":"obrsmilan@gmail.com","sameAs":["https://www.linkedin.com/in/milan-obradors","https://github.com/milan-sec"],"address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressCountry":"FR"},"knowsAbout":["Cybersécurité","Pentest","Réseaux","Linux","OWASP"]}</script>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  :root{
-    --bg:#0a0a0a;--bg2:#111111;--bg3:#161616;
-    --green:#00ff88;--green2:#00cc6a;--green3:#004422;
-    --text:#e0e0e0;--muted:#666;--border:#222;
-    --amber:#ffaa00;--red:#ff4444;--blue:#4488ff;
-  }
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;overflow-x:hidden;cursor:none}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0a;--bg2:#111111;--bg3:#161616;
+  --green:#00ff88;--green2:#00cc6a;--green3:#004422;
+  --text:#e0e0e0;--muted:#666;--border:#222;
+  --amber:#ffaa00;
+}
+body.light{
+  --bg:#f5f5f0;--bg2:#ebebeb;--bg3:#e0e0da;
+  --green:#007a40;--green2:#006535;--green3:#c8ecd9;
+  --text:#1a1a1a;--muted:#888;--border:#d0d0d0;
+  --amber:#b07800;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;overflow-x:hidden;transition:background 0.3s,color 0.3s}
+::selection{background:var(--green);color:#000}
 
-  .cursor{position:fixed;width:12px;height:12px;background:var(--green);border-radius:50%;pointer-events:none;z-index:9999;transition:transform 0.1s;mix-blend-mode:screen}
-  .cursor-ring{position:fixed;width:32px;height:32px;border:1px solid var(--green);border-radius:50%;pointer-events:none;z-index:9998;transition:all 0.15s ease;mix-blend-mode:screen}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 2rem;transition:background 0.3s}
+body.light nav{background:rgba(245,245,240,0.92)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem;flex-wrap:wrap}
+.nav-logo{font-family:'Space Mono',monospace;font-size:14px;color:var(--green);letter-spacing:2px;white-space:nowrap}
+.nav-logo span{color:var(--muted)}
+.nav-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s}
+.nav-links a:hover{color:var(--green)}
 
-  ::selection{background:var(--green);color:#000}
+/* CONTROLS BAR */
+.nav-controls{display:flex;align-items:center;gap:8px}
 
-  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 2rem}
-  .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
-  .nav-logo{font-family:'Space Mono',monospace;font-size:14px;color:var(--green);letter-spacing:2px}
-  .nav-logo span{color:var(--muted)}
-  .nav-links{display:flex;gap:2rem}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s}
-  .nav-links a:hover{color:var(--green)}
+/* LANG SWITCHER */
+.lang-switcher{display:flex;border:1px solid var(--border);overflow:hidden;border-radius:4px}
+.lang-btn{background:transparent;border:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;padding:5px 9px;cursor:pointer;transition:all 0.2s}
+.lang-btn:not(:last-child){border-right:1px solid var(--border)}
+.lang-btn.active{background:var(--green);color:#000;font-weight:700}
+.lang-btn:hover:not(.active){color:var(--green)}
 
-  .scanline{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,136,0.015) 2px,rgba(0,255,136,0.015) 4px)}
+/* THEME TOGGLE */
+.theme-toggle{background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 10px;cursor:pointer;transition:all 0.2s;border-radius:4px;white-space:nowrap}
+.theme-toggle:hover{color:var(--green);border-color:var(--green)}
 
-  section{max-width:1100px;margin:0 auto;padding:0 2rem}
+/* SCANLINE — dark only */
+.scanline{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,136,0.012) 2px,rgba(0,255,136,0.012) 4px);transition:opacity 0.3s}
+body.light .scanline{opacity:0}
 
-  #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
-  .hero-content{position:relative;z-index:2;padding-top:56px}
-  .hero-tag{font-size:11px;color:var(--green);letter-spacing:3px;margin-bottom:1.5rem;opacity:0.7}
-  .hero-tag::before{content:'> '}
-  h1{font-family:'Space Mono',monospace;font-size:clamp(2.5rem,6vw,5rem);line-height:1;color:#fff;margin-bottom:1rem}
-  h1 .cursor-blink{display:inline-block;width:3px;height:1em;background:var(--green);animation:blink 1s step-end infinite;vertical-align:middle;margin-left:4px}
-  .hero-sub{font-size:14px;color:var(--muted);line-height:1.8;max-width:560px;margin-bottom:2.5rem}
-  .hero-sub .hl{color:var(--green)}
-  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-  .btn-primary{padding:12px 28px;background:var(--green);color:#000;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:2px;text-decoration:none;border:none;cursor:none;transition:all 0.2s;display:inline-block}
-  .btn-primary:hover{background:var(--green2);transform:translate(-2px,-2px)}
-  .btn-outline{padding:12px 28px;background:transparent;color:var(--green);font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:2px;text-decoration:none;border:1px solid var(--green);cursor:none;transition:all 0.2s;display:inline-block}
-  .btn-outline:hover{background:rgba(0,255,136,0.05);transform:translate(-2px,-2px)}
+section{max-width:1100px;margin:0 auto;padding:0 2rem}
 
-  .hero-grid{position:absolute;right:-200px;top:50%;transform:translateY(-50%);opacity:0.04;font-size:11px;color:var(--green);line-height:1.6;white-space:pre;user-select:none}
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-content{position:relative;z-index:2;padding-top:56px}
+.hero-tag{font-size:11px;color:var(--green);letter-spacing:3px;margin-bottom:1.5rem;opacity:0.8}
+.hero-tag::before{content:'> ';color:var(--muted)}
+h1{font-family:'Space Mono',monospace;font-size:clamp(2.2rem,5vw,4.5rem);line-height:1.05;color:var(--text);margin-bottom:1rem}
+h1 .cursor-blink{display:inline-block;width:3px;height:0.85em;background:var(--green);animation:blink 1s step-end infinite;vertical-align:middle;margin-left:4px}
+.hero-accent{color:var(--green);font-size:clamp(1.6rem,3.5vw,3rem)}
+.hero-sub{font-size:13px;color:var(--muted);line-height:1.9;max-width:560px;margin-bottom:2.5rem}
+.hero-sub .hl{color:var(--green)}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{padding:12px 28px;background:var(--green);color:#000;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s;display:inline-block}
+.btn-primary:hover{background:var(--green2);transform:translate(-2px,-2px)}
+.btn-outline{padding:12px 28px;background:transparent;color:var(--green);font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;text-decoration:none;border:1px solid var(--green);cursor:pointer;transition:all 0.2s;display:inline-block}
+.btn-outline:hover{background:rgba(0,255,136,0.08);transform:translate(-2px,-2px)}
+.hero-grid{position:absolute;right:-100px;top:50%;transform:translateY(-50%);opacity:0.03;font-size:10px;color:var(--green);line-height:1.6;white-space:pre;user-select:none}
+body.light .hero-grid{opacity:0.06}
 
-  .status-bar{display:flex;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}
-  .status-item{display:flex;flex-direction:column;gap:4px}
-  .status-label{font-size:10px;color:var(--muted);letter-spacing:2px}
-  .status-value{font-size:13px;color:var(--green)}
-  .status-dot{width:6px;height:6px;background:var(--green);border-radius:50%;display:inline-block;margin-right:6px;animation:pulse 2s infinite}
+.status-bar{display:flex;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}
+.status-item{display:flex;flex-direction:column;gap:4px}
+.status-label{font-size:10px;color:var(--muted);letter-spacing:2px}
+.status-value{font-size:12px;color:var(--green)}
+.status-dot{width:6px;height:6px;background:var(--green);border-radius:50%;display:inline-block;margin-right:6px;animation:pulse 2s infinite}
 
-  .terminal-box{background:var(--bg2);border:1px solid var(--border);margin:6rem auto;padding:0;max-width:700px;font-size:13px}
-  .terminal-header{background:var(--bg3);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
-  .dot{width:10px;height:10px;border-radius:50%}
-  .dot-r{background:#ff5f57}.dot-y{background:#febc2e}.dot-g{background:#28c840}
-  .terminal-title{font-size:11px;color:var(--muted);margin-left:auto;letter-spacing:1px}
-  .terminal-body{padding:1.5rem}
-  .t-line{margin-bottom:6px;line-height:1.6}
-  .t-prompt{color:var(--green)}
-  .t-cmd{color:#fff}
-  .t-out{color:var(--muted);padding-left:1rem}
-  .t-out.success{color:var(--green)}
-  .t-out.warn{color:var(--amber)}
+/* TERMINAL */
+.terminal-box{background:var(--bg2);border:1px solid var(--border);margin:5rem auto;padding:0;max-width:680px;font-size:12px;transition:background 0.3s,border-color 0.3s}
+.terminal-header{background:var(--bg3);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+.dot{width:10px;height:10px;border-radius:50%}
+.dot-r{background:#ff5f57}.dot-y{background:#febc2e}.dot-g{background:#28c840}
+.terminal-title{font-size:10px;color:var(--muted);margin-left:auto;letter-spacing:1px}
+.terminal-body{padding:1.5rem}
+.t-line{margin-bottom:6px;line-height:1.7}
+.t-prompt{color:var(--green)}
+.t-cmd{color:var(--text)}
+.t-out{color:var(--muted);padding-left:1rem}
+.t-out.success{color:var(--green)}
+.t-out.warn{color:var(--amber)}
 
-  #services{padding:6rem 2rem}
-  .section-header{margin-bottom:3rem}
-  .section-tag{font-size:11px;color:var(--green);letter-spacing:3px;margin-bottom:0.75rem;opacity:0.7}
-  .section-tag::before{content:'// '}
-  h2{font-family:'Space Mono',monospace;font-size:clamp(1.5rem,3vw,2.5rem);color:#fff;margin-bottom:0.5rem}
-  .section-desc{color:var(--muted);font-size:13px;max-width:500px;line-height:1.7}
+/* SECTIONS */
+.section-wrap{max-width:1100px;margin:0 auto}
+.section-tag{font-size:10px;color:var(--green);letter-spacing:3px;margin-bottom:0.75rem;opacity:0.8}
+.section-tag::before{content:'// '}
+h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color:var(--text);margin-bottom:0.5rem}
+.section-desc{color:var(--muted);font-size:12px;max-width:500px;line-height:1.8}
 
-  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--border)}
-  .service-card{background:var(--bg);padding:2rem;transition:background 0.2s;position:relative;overflow:hidden}
-  .service-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--green);transition:height 0.3s}
-  .service-card:hover{background:var(--bg2)}
-  .service-card:hover::before{height:100%}
-  .service-cat{font-size:10px;letter-spacing:3px;color:var(--muted);margin-bottom:1rem}
-  .service-name{font-family:'Space Mono',monospace;font-size:16px;color:#fff;margin-bottom:0.75rem}
-  .service-desc{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
-  .service-items{list-style:none;margin-bottom:1.5rem}
-  .service-items li{font-size:11px;color:var(--muted);padding:3px 0;display:flex;gap:8px}
-  .service-items li::before{content:'→';color:var(--green);flex-shrink:0}
-  .service-price{display:flex;align-items:baseline;gap:6px}
-  .price-from{font-size:10px;color:var(--muted);letter-spacing:1px}
-  .price-val{font-family:'Space Mono',monospace;font-size:20px;color:var(--green);font-weight:700}
-  .price-unit{font-size:11px;color:var(--muted)}
-  .badge-new{font-size:9px;letter-spacing:2px;background:var(--green3);color:var(--green);padding:2px 8px;border:1px solid var(--green);position:absolute;top:1.5rem;right:1.5rem}
+/* SERVICES */
+#services{padding:5rem 2rem}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--border);margin-top:2.5rem}
+.service-card{background:var(--bg);padding:1.75rem;transition:background 0.2s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:2px;height:0;background:var(--green);transition:height 0.3s}
+.service-card:hover{background:var(--bg2)}
+.service-card:hover::before{height:100%}
+.service-cat{font-size:9px;letter-spacing:3px;color:var(--muted);margin-bottom:0.75rem}
+.service-name{font-family:'Space Mono',monospace;font-size:14px;color:var(--text);margin-bottom:0.6rem}
+.service-desc{font-size:11px;color:var(--muted);line-height:1.7;margin-bottom:1.25rem}
+.service-items{list-style:none;margin-bottom:1.25rem}
+.service-items li{font-size:11px;color:var(--muted);padding:2px 0;display:flex;gap:8px}
+.service-items li::before{content:'→';color:var(--green);flex-shrink:0}
+.service-price{display:flex;align-items:baseline;gap:6px}
+.price-from{font-size:9px;color:var(--muted);letter-spacing:1px}
+.price-val{font-family:'Space Mono',monospace;font-size:18px;color:var(--green);font-weight:700}
+.price-unit{font-size:10px;color:var(--muted)}
+.badge-pop{font-size:8px;letter-spacing:2px;background:var(--green3);color:var(--green);padding:2px 8px;border:1px solid var(--green);position:absolute;top:1.25rem;right:1.25rem}
 
-  #about{padding:6rem 2rem;border-top:1px solid var(--border)}
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-  .about-text{color:var(--muted);font-size:13px;line-height:1.9}
-  .about-text p{margin-bottom:1rem}
-  .about-text .hl{color:var(--green)}
-  .skills-list{display:flex;flex-direction:column;gap:12px}
-  .skill-row{display:flex;align-items:center;gap:12px}
-  .skill-name{font-size:11px;color:var(--muted);width:120px;letter-spacing:1px;flex-shrink:0}
-  .skill-bar{flex:1;height:2px;background:var(--border)}
-  .skill-fill{height:100%;background:var(--green);position:relative}
-  .skill-fill::after{content:'';position:absolute;right:0;top:-3px;width:8px;height:8px;background:var(--green);border-radius:50%}
-  .skill-pct{font-size:10px;color:var(--green);width:32px;text-align:right}
+/* ABOUT */
+#about{padding:5rem 2rem;border-top:1px solid var(--border)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2rem}
+.about-text{color:var(--muted);font-size:12px;line-height:1.9}
+.about-text p{margin-bottom:1rem}
+.about-text .hl{color:var(--green)}
+.skills-list{display:flex;flex-direction:column;gap:12px}
+.skill-row{display:flex;align-items:center;gap:12px}
+.skill-name{font-size:11px;color:var(--muted);width:120px;letter-spacing:1px;flex-shrink:0}
+.skill-bar{flex:1;height:2px;background:var(--border)}
+.skill-fill{height:100%;background:var(--green);position:relative;transition:width 0.8s ease}
+.skill-fill::after{content:'';position:absolute;right:0;top:-3px;width:7px;height:7px;background:var(--green);border-radius:50%}
+.skill-pct{font-size:10px;color:var(--green);width:32px;text-align:right}
 
-  #process{padding:6rem 2rem;border-top:1px solid var(--border)}
-  .process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:3rem}
-  .step{position:relative;padding-left:2rem}
-  .step-num{position:absolute;left:0;top:0;font-family:'Space Mono',monospace;font-size:11px;color:var(--green);opacity:0.5}
-  .step-title{font-family:'Space Mono',monospace;font-size:14px;color:#fff;margin-bottom:0.5rem}
-  .step-desc{font-size:12px;color:var(--muted);line-height:1.7}
+/* PROCESS */
+#process{padding:5rem 2rem;border-top:1px solid var(--border)}
+.process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;margin-top:2.5rem}
+.step{position:relative;padding-left:2rem}
+.step-num{position:absolute;left:0;top:0;font-family:'Space Mono',monospace;font-size:10px;color:var(--green);opacity:0.5}
+.step-title{font-family:'Space Mono',monospace;font-size:13px;color:var(--text);margin-bottom:0.5rem}
+.step-desc{font-size:11px;color:var(--muted);line-height:1.7}
 
-  #contact{padding:6rem 2rem;border-top:1px solid var(--border)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3rem}
-  .contact-info{display:flex;flex-direction:column;gap:1.5rem}
-  .contact-item{display:flex;gap:1rem;align-items:flex-start}
-  .contact-icon{font-size:14px;color:var(--green);margin-top:2px;width:20px;flex-shrink:0}
-  .contact-label{font-size:10px;color:var(--muted);letter-spacing:2px;margin-bottom:4px}
-  .contact-val{font-size:13px;color:var(--text)}
-  .contact-val a{color:var(--text);text-decoration:none;transition:color 0.2s}
-  .contact-val a:hover{color:var(--green)}
-  .contact-form{display:flex;flex-direction:column;gap:1rem}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-  .form-group{display:flex;flex-direction:column;gap:6px}
-  .form-label{font-size:10px;color:var(--muted);letter-spacing:2px}
-  .form-input,.form-select,.form-textarea{background:var(--bg2);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:12px;padding:10px 14px;outline:none;transition:border-color 0.2s}
-  .form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--green)}
-  .form-select option{background:var(--bg2)}
-  .form-textarea{resize:vertical;min-height:100px}
-  .form-submit{background:var(--green);color:#000;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:2px;padding:14px 28px;border:none;cursor:pointer;transition:all 0.2s;align-self:flex-start}
-  .form-submit:hover{background:var(--green2);transform:translate(-2px,-2px)}
-  .form-note{font-size:10px;color:var(--muted);line-height:1.6}
-  .form-success{display:none;background:var(--green3);border:1px solid var(--green);padding:1rem;color:var(--green);font-size:12px;line-height:1.6}
+/* CONTACT */
+#contact{padding:5rem 2rem;border-top:1px solid var(--border)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2.5rem}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.contact-item{display:flex;gap:1rem;align-items:flex-start}
+.contact-icon{font-size:13px;color:var(--green);margin-top:2px;width:20px;flex-shrink:0}
+.contact-label{font-size:9px;color:var(--muted);letter-spacing:2px;margin-bottom:4px}
+.contact-val{font-size:12px;color:var(--text)}
+.contact-val a{color:var(--text);text-decoration:none;transition:color 0.2s}
+.contact-val a:hover{color:var(--green)}
+.contact-form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-label{font-size:9px;color:var(--muted);letter-spacing:2px}
+.form-input,.form-select,.form-textarea{background:var(--bg2);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:12px;padding:10px 14px;outline:none;transition:border-color 0.2s,background 0.3s}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--green)}
+.form-select option{background:var(--bg2)}
+.form-textarea{resize:vertical;min-height:90px}
+.form-submit{background:var(--green);color:#000;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;padding:13px 28px;border:none;cursor:pointer;transition:all 0.2s;align-self:flex-start}
+.form-submit:hover{background:var(--green2);transform:translate(-2px,-2px)}
+.form-note{font-size:10px;color:var(--muted);line-height:1.6}
+.form-success{display:none;background:var(--green3);border:1px solid var(--green);padding:1rem;color:var(--green);font-size:11px;line-height:1.6}
 
-  footer{border-top:1px solid var(--border);padding:2rem}
-  .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-  .footer-copy{font-size:11px;color:var(--muted)}
-  .footer-links{display:flex;gap:1.5rem}
-  .footer-links a{font-size:11px;color:var(--muted);text-decoration:none;transition:color 0.2s}
-  .footer-links a:hover{color:var(--green)}
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:10px;color:var(--muted)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:10px;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--green)}
 
-  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-  .fade-up{animation:fadeUp 0.6s ease both}
-  .delay-1{animation-delay:0.1s}.delay-2{animation-delay:0.2s}.delay-3{animation-delay:0.3s}.delay-4{animation-delay:0.4s}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp 0.6s ease both}
+.delay-1{animation-delay:0.1s}.delay-2{animation-delay:0.2s}.delay-3{animation-delay:0.3s}.delay-4{animation-delay:0.4s}
 
-  @media(max-width:700px){
-    .about-grid,.contact-grid{grid-template-columns:1fr}
-    .form-row{grid-template-columns:1fr}
-    .footer-inner{flex-direction:column}
-    .nav-links{gap:1rem}
-    .status-bar{gap:1rem}
-  }
+@media(max-width:700px){
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column}
+  .nav-links{gap:1rem}
+  .nav-controls{gap:6px}
+  .lang-btn{padding:4px 7px;font-size:9px}
+}
 </style>
 </head>
 <body>
 
-<div class="cursor" id="cur"></div>
-<div class="cursor-ring" id="ring"></div>
 <div class="scanline"></div>
 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo"><span>~/ </span>milan-sec</div>
     <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#about">Profil</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i="nav_services">Services</a>
+      <a href="#about" data-i="nav_about">Profil</a>
+      <a href="#process" data-i="nav_process">Process</a>
+      <a href="#contact" data-i="nav_contact">Contact</a>
+    </div>
+    <div class="nav-controls">
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('es')">ES</button>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">☀ Jour</button>
     </div>
   </div>
 </nav>
 
 <div id="hero">
   <section class="hero-content">
-    <div class="hero-tag fade-up">cybersécurité · réseaux · toulouse &amp; remote</div>
+    <div class="hero-tag fade-up" data-i="hero_tag">cybersécurité · réseaux · toulouse & remote</div>
     <h1 class="fade-up delay-1">Milan Obradors<span class="cursor-blink"></span></h1>
-    <h1 class="fade-up delay-2" style="color:var(--green);font-size:clamp(1.8rem,4vw,3.5rem)">Cybersécurité &amp; Réseau</h1>
-    <p class="hero-sub fade-up delay-3">Étudiant en <span class="hl">pentest &amp; réseaux</span>, je propose des services de sécurité accessibles pour les <span class="hl">PME, freelances et particuliers</span>. Des tarifs débutant, un travail sérieux.</p>
+    <h1 class="hero-accent fade-up delay-2" data-i="hero_title">Cybersécurité &amp; Réseau</h1>
+    <p class="hero-sub fade-up delay-3" data-i="hero_sub">Étudiant en <span class="hl">pentest &amp; réseaux</span>, je propose des services de sécurité accessibles pour les <span class="hl">PME, freelances et particuliers</span>. Des tarifs débutant, un travail sérieux.</p>
     <div class="hero-btns fade-up delay-4">
-      <a href="#services" class="btn-primary">Voir les services</a>
-      <a href="#contact" class="btn-outline">Me contacter</a>
+      <a href="#services" class="btn-primary" data-i="hero_cta1">Voir les services</a>
+      <a href="#contact" class="btn-outline" data-i="hero_cta2">Me contacter</a>
     </div>
     <div class="status-bar fade-up delay-4">
       <div class="status-item">
-        <span class="status-label">Disponibilité</span>
-        <span class="status-value"><span class="status-dot"></span>Disponible</span>
+        <span class="status-label" data-i="status_avail_label">Disponibilité</span>
+        <span class="status-value"><span class="status-dot"></span><span data-i="status_avail">Disponible</span></span>
       </div>
       <div class="status-item">
-        <span class="status-label">Localisation</span>
+        <span class="status-label" data-i="status_loc_label">Localisation</span>
         <span class="status-value">Toulouse 🇫🇷</span>
       </div>
       <div class="status-item">
         <span class="status-label">Remote</span>
-        <span class="status-value">OK partout en France</span>
+        <span class="status-value" data-i="status_remote">OK toute la France</span>
       </div>
       <div class="status-item">
-        <span class="status-label">Réponse</span>
+        <span class="status-label" data-i="status_reply_label">Réponse</span>
         <span class="status-value">&lt; 24h</span>
       </div>
     </div>
@@ -249,11 +257,10 @@
 10110010 11001010 00110101 10101100
 01110011 01100101 01100011 00110101
 10101010 11110000 01010101 00001111
-00110011 10101010 01110100 10110001
-11001100 00101010 10110110 01001001</div>
+00110011 10101010 01110100 10110001</div>
 </div>
 
-<div style="max-width:700px;margin:0 auto;padding:0 2rem">
+<div style="max-width:680px;margin:0 auto;padding:0 2rem">
   <div class="terminal-box">
     <div class="terminal-header">
       <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
@@ -261,176 +268,144 @@
     </div>
     <div class="terminal-body">
       <div class="t-line"><span class="t-prompt">milan@kali:~$</span> <span class="t-cmd">whoami --details</span></div>
-      <div class="t-line t-out success">Milan Obradors — Étudiant Cybersécurité & Réseaux (Bac+2)</div>
-      <div class="t-line t-out">Orientation: pentest, red team, cloud &amp; networking</div>
-      <div class="t-line t-out">Localisation: Toulouse — remote OK partout en France</div>
-      <div class="t-line t-out">Alternance: septembre 2025 (grandes entreprises visées)</div>
+      <div class="t-line t-out success" data-i="term1">Milan Obradors — Étudiant Cybersécurité & Réseaux (Bac+2)</div>
+      <div class="t-line t-out" data-i="term2">Orientation: pentest, red team, cloud &amp; networking</div>
+      <div class="t-line t-out" data-i="term3">Localisation: Toulouse — remote OK partout en France</div>
+      <div class="t-line t-out" data-i="term4">Alternance: septembre 2025 (grandes entreprises visées)</div>
       <div class="t-line" style="margin-top:12px"><span class="t-prompt">milan@kali:~$</span> <span class="t-cmd">cat why_choose_me.txt</span></div>
-      <div class="t-line t-out">→ Tarifs bas = idéal pour les TPE/PME et particuliers</div>
-      <div class="t-line t-out">→ Travail documenté et transparent</div>
-      <div class="t-line t-out">→ Réponse rapide, communication claire</div>
-      <div class="t-line t-out warn">→ Pas encore senior, mais sérieux et motivé ✓</div>
+      <div class="t-line t-out" data-i="term5">→ Tarifs bas = idéal pour les TPE/PME et particuliers</div>
+      <div class="t-line t-out" data-i="term6">→ Travail documenté et transparent</div>
+      <div class="t-line t-out" data-i="term7">→ Réponse rapide, communication claire</div>
+      <div class="t-line t-out warn" data-i="term8">→ Pas encore senior, mais sérieux et motivé ✓</div>
     </div>
   </div>
 </div>
 
-<div id="services" style="max-width:1100px;margin:0 auto">
+<div id="services" class="section-wrap">
   <div style="padding:0 2rem;margin-bottom:2rem">
-    <div class="section-tag">services</div>
-    <h2>Ce que je propose</h2>
-    <p class="section-desc">Tous les services incluent un rapport ou livrable clair. Devis gratuit avant toute prestation.</p>
+    <div class="section-tag" data-i="s_services_tag">services</div>
+    <h2 data-i="s_services_title">Ce que je propose</h2>
+    <p class="section-desc" data-i="s_services_desc">Tous les services incluent un rapport ou livrable clair. Devis gratuit avant toute prestation.</p>
   </div>
   <div class="services-grid">
 
     <div class="service-card">
-      <span class="badge-new">POPULAIRE</span>
-      <div class="service-cat">AUDIT · SECURITE</div>
-      <div class="service-name">Audit de sécurité basique</div>
-      <div class="service-desc">Scan de vulnérabilités, rapport avec recommandations, adapté aux PME et sites web perso.</div>
+      <span class="badge-pop" data-i="badge_pop">POPULAIRE</span>
+      <div class="service-cat" data-i="cat1">AUDIT · SECURITE</div>
+      <div class="service-name" data-i="svc1_name">Audit de sécurité basique</div>
+      <div class="service-desc" data-i="svc1_desc">Scan de vulnérabilités, rapport avec recommandations, adapté aux PME et sites web perso.</div>
       <ul class="service-items">
-        <li>Scan Nmap + énumération des ports</li>
-        <li>Détection des CVE connues</li>
-        <li>Rapport PDF avec priorités</li>
-        <li>Appel de restitution inclus</li>
+        <li data-i="svc1_i1">Scan Nmap + énumération des ports</li>
+        <li data-i="svc1_i2">Détection des CVE connues</li>
+        <li data-i="svc1_i3">Rapport PDF avec priorités</li>
+        <li data-i="svc1_i4">Appel de restitution inclus</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">80€</span>
-        <span class="price-unit">/ prestation</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">80€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">PENTEST · WEB</div>
-      <div class="service-name">Test de pénétration web</div>
-      <div class="service-desc">Test OWASP Top 10 sur votre site ou application web. Contrat signé obligatoire, scope défini.</div>
+      <div class="service-cat" data-i="cat2">PENTEST · WEB</div>
+      <div class="service-name" data-i="svc2_name">Test de pénétration web</div>
+      <div class="service-desc" data-i="svc2_desc">Test OWASP Top 10 sur votre site ou application web. Contrat signé obligatoire, scope défini.</div>
       <ul class="service-items">
         <li>XSS, SQLi, CSRF, IDOR</li>
-        <li>Test d'authentification &amp; sessions</li>
-        <li>Rapport technique + executive summary</li>
-        <li>Retests inclus sur les vulnérabilités</li>
+        <li data-i="svc2_i2">Test d'authentification &amp; sessions</li>
+        <li data-i="svc2_i3">Rapport technique + executive summary</li>
+        <li data-i="svc2_i4">Retests inclus sur les vulnérabilités</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">150€</span>
-        <span class="price-unit">/ prestation</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">150€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">RESEAU · CONFIG</div>
-      <div class="service-name">Configuration réseau sécurisée</div>
-      <div class="service-desc">Mise en place ou audit de votre infrastructure réseau pour TPE, télétravail ou homelab.</div>
+      <div class="service-cat" data-i="cat3">RESEAU · CONFIG</div>
+      <div class="service-name" data-i="svc3_name">Configuration réseau sécurisée</div>
+      <div class="service-desc" data-i="svc3_desc">Mise en place ou audit de votre infrastructure réseau pour TPE, télétravail ou homelab.</div>
       <ul class="service-items">
-        <li>Config firewall (pfSense, iptables)</li>
-        <li>Mise en place VPN (WireGuard, OpenVPN)</li>
-        <li>Segmentation VLAN</li>
+        <li data-i="svc3_i1">Config firewall (pfSense, iptables)</li>
+        <li data-i="svc3_i2">Mise en place VPN (WireGuard, OpenVPN)</li>
+        <li data-i="svc3_i3">Segmentation VLAN</li>
         <li>Pi-hole, DNS sécurisé</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">60€</span>
-        <span class="price-unit">/ prestation</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">60€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">FORMATION · SENSIBILISATION</div>
-      <div class="service-name">Atelier anti-phishing</div>
-      <div class="service-desc">Formation 1h pour vos équipes : reconnaître les arnaques, les bons réflexes, simulation incluse.</div>
+      <div class="service-cat" data-i="cat4">FORMATION · SENSIBILISATION</div>
+      <div class="service-name" data-i="svc4_name">Atelier anti-phishing</div>
+      <div class="service-desc" data-i="svc4_desc">Formation 1h pour vos équipes : reconnaître les arnaques, les bons réflexes, simulation incluse.</div>
       <ul class="service-items">
-        <li>Présentation interactive</li>
-        <li>Simulation de phishing (avec accord)</li>
-        <li>Guide de bonnes pratiques offert</li>
-        <li>Format présentiel ou visio</li>
+        <li data-i="svc4_i1">Présentation interactive</li>
+        <li data-i="svc4_i2">Simulation de phishing (avec accord)</li>
+        <li data-i="svc4_i3">Guide de bonnes pratiques offert</li>
+        <li data-i="svc4_i4">Format présentiel ou visio</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">50€</span>
-        <span class="price-unit">/ session</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">50€</span><span class="price-unit" data-i="per_session">/ session</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">DEV · WEB</div>
-      <div class="service-name">Site vitrine / portfolio</div>
-      <div class="service-desc">Site web simple, rapide et optimisé SEO pour indépendants, artisans ou petits commerces.</div>
+      <div class="service-cat" data-i="cat5">DEV · WEB</div>
+      <div class="service-name" data-i="svc5_name">Site vitrine / portfolio</div>
+      <div class="service-desc" data-i="svc5_desc">Site web simple, rapide et optimisé SEO pour indépendants, artisans ou petits commerces.</div>
       <ul class="service-items">
-        <li>HTML/CSS/JS vanilla — ultra rapide</li>
-        <li>Design responsive mobile</li>
-        <li>Formulaire de contact fonctionnel</li>
-        <li>Hébergement conseillé inclus</li>
+        <li data-i="svc5_i1">HTML/CSS/JS vanilla — ultra rapide</li>
+        <li data-i="svc5_i2">Design responsive mobile</li>
+        <li data-i="svc5_i3">Formulaire de contact fonctionnel</li>
+        <li data-i="svc5_i4">Hébergement conseillé inclus</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">120€</span>
-        <span class="price-unit">/ site</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">120€</span><span class="price-unit" data-i="per_site">/ site</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">SUPPORT · ADMIN SYS</div>
-      <div class="service-name">Support tech &amp; Linux</div>
-      <div class="service-desc">Installation, config, dépannage Linux ou Windows. Homelab, NAS, sauvegardes — je gère.</div>
+      <div class="service-cat" data-i="cat6">SUPPORT · ADMIN SYS</div>
+      <div class="service-name" data-i="svc6_name">Support tech &amp; Linux</div>
+      <div class="service-desc" data-i="svc6_desc">Installation, config, dépannage Linux ou Windows. Homelab, NAS, sauvegardes — je gère.</div>
       <ul class="service-items">
-        <li>Installation Linux (Ubuntu, Debian, Arch)</li>
-        <li>Setup Proxmox / machines virtuelles</li>
-        <li>Configuration NAS &amp; backups</li>
-        <li>Dépannage réseau maison</li>
+        <li data-i="svc6_i1">Installation Linux (Ubuntu, Debian, Arch)</li>
+        <li data-i="svc6_i2">Setup Proxmox / machines virtuelles</li>
+        <li data-i="svc6_i3">Configuration NAS &amp; backups</li>
+        <li data-i="svc6_i4">Dépannage réseau maison</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">25€</span>
-        <span class="price-unit">/ heure</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">25€</span><span class="price-unit" data-i="per_hour">/ heure</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">COURS · TUTORAT</div>
-      <div class="service-name">Cours particuliers info / sécu</div>
-      <div class="service-desc">Aide aux devoirs, projets scolaires, ou apprentissage autonome pour BTS SIO, BUT Info, autodidactes.</div>
+      <div class="service-cat" data-i="cat7">COURS · TUTORAT</div>
+      <div class="service-name" data-i="svc7_name">Cours particuliers info / sécu</div>
+      <div class="service-desc" data-i="svc7_desc">Aide aux devoirs, projets scolaires ou apprentissage autonome pour BTS SIO, BUT Info, autodidactes.</div>
       <ul class="service-items">
-        <li>Réseaux (CCNA, TCP/IP, subnetting)</li>
-        <li>Linux &amp; scripting bash/Python</li>
-        <li>Cybersécurité débutant</li>
-        <li>Aide projets BTS/BUT</li>
+        <li data-i="svc7_i1">Réseaux (CCNA, TCP/IP, subnetting)</li>
+        <li data-i="svc7_i2">Linux &amp; scripting bash/Python</li>
+        <li data-i="svc7_i3">Cybersécurité débutant</li>
+        <li data-i="svc7_i4">Aide projets BTS/BUT</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">20€</span>
-        <span class="price-unit">/ heure</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">20€</span><span class="price-unit" data-i="per_hour">/ heure</span></div>
     </div>
 
     <div class="service-card">
-      <div class="service-cat">OSINT · INVESTIGATION</div>
-      <div class="service-name">Recherche OSINT basique</div>
-      <div class="service-desc">Collecte d'informations publiques sur une entité (entreprise, domaine, profil) dans un cadre légal.</div>
+      <div class="service-cat" data-i="cat8">OSINT · INVESTIGATION</div>
+      <div class="service-name" data-i="svc8_name">Recherche OSINT basique</div>
+      <div class="service-desc" data-i="svc8_desc">Collecte d'informations publiques sur une entité (entreprise, domaine, profil) dans un cadre légal.</div>
       <ul class="service-items">
-        <li>Analyse de domaine (Shodan, Whois)</li>
-        <li>Google Dorks, métadonnées</li>
-        <li>Rapport structuré</li>
-        <li>Cadre légal strict respecté</li>
+        <li data-i="svc8_i1">Analyse de domaine (Shodan, Whois)</li>
+        <li data-i="svc8_i2">Google Dorks, métadonnées</li>
+        <li data-i="svc8_i3">Rapport structuré</li>
+        <li data-i="svc8_i4">Cadre légal strict respecté</li>
       </ul>
-      <div class="service-price">
-        <span class="price-from">à partir de</span>
-        <span class="price-val">40€</span>
-        <span class="price-unit">/ rapport</span>
-      </div>
+      <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">40€</span><span class="price-unit" data-i="per_report">/ rapport</span></div>
     </div>
 
   </div>
 </div>
 
-<div id="about" style="max-width:1100px;margin:0 auto">
+<div id="about" class="section-wrap">
   <section>
-    <div class="section-tag">profil</div>
-    <h2>Qui suis-je ?</h2>
-    <div class="about-grid" style="margin-top:2.5rem">
+    <div class="section-tag" data-i="s_about_tag">profil</div>
+    <h2 data-i="s_about_title">Qui suis-je ?</h2>
+    <div class="about-grid">
       <div class="about-text">
-        <p>Je suis <span class="hl">Milan Obradors</span>, étudiant en 2e année dans un cursus cybersécurité &amp; réseaux en France, avec une orientation pentest et red team. Je me prépare à une alternance dans de grandes entreprises (banques, telcos) à partir de septembre 2025.</p>
-        <p>Basé à <span class="hl">Toulouse</span>, je travaille aussi en <span class="hl">remote</span> partout en France. En attendant l'alternance, je propose mes compétences à des tarifs accessibles — idéal pour les PME et particuliers qui ne peuvent pas se payer un cabinet senior.</p>
-        <p>Je m'entraîne régulièrement sur <span class="hl">TryHackMe</span> et <span class="hl">HackTheBox</span>, et je documente tout sur GitHub. Mes tarifs sont bas, mon sérieux ne l'est pas.</p>
+        <p data-i="about_p1">Je suis <span class="hl">Milan Obradors</span>, étudiant en 2e année dans un cursus cybersécurité &amp; réseaux, avec une orientation pentest et red team. Je me prépare à une alternance dans de grandes entreprises (banques, telcos) à partir de septembre 2025.</p>
+        <p data-i="about_p2">Basé à <span class="hl">Toulouse</span>, je travaille aussi en <span class="hl">remote</span> partout en France. En attendant l'alternance, je propose mes compétences à des tarifs accessibles — idéal pour les PME et particuliers qui ne peuvent pas se payer un cabinet senior.</p>
+        <p data-i="about_p3">Je m'entraîne régulièrement sur <span class="hl">TryHackMe</span> et <span class="hl">HackTheBox</span>, et je documente tout sur GitHub. Mes tarifs sont bas, mon sérieux ne l'est pas.</p>
       </div>
       <div class="skills-list">
         <div class="skill-row"><span class="skill-name">Réseaux TCP/IP</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
@@ -445,59 +420,47 @@
   </section>
 </div>
 
-<div id="process" style="max-width:1100px;margin:0 auto">
+<div id="process" class="section-wrap">
   <section>
-    <div class="section-tag">comment ça marche</div>
-    <h2>Le processus</h2>
+    <div class="section-tag" data-i="s_process_tag">comment ça marche</div>
+    <h2 data-i="s_process_title">Le processus</h2>
     <div class="process-steps">
-      <div class="step"><span class="step-num">01</span><div class="step-title">Contact</div><div class="step-desc">Tu m'envoies un message avec ton besoin. Je réponds sous 24h.</div></div>
-      <div class="step"><span class="step-num">02</span><div class="step-title">Devis gratuit</div><div class="step-desc">Je t'envoie un devis détaillé. Aucun engagement, aucune surprise.</div></div>
-      <div class="step"><span class="step-num">03</span><div class="step-title">Contrat &amp; scope</div><div class="step-desc">Pour les prestations sécu, on signe un contrat qui définit le périmètre. Obligatoire et ça te protège aussi.</div></div>
-      <div class="step"><span class="step-num">04</span><div class="step-title">Livraison</div><div class="step-desc">Rapport clair, recommandations actionnables, appel de restitution si besoin.</div></div>
+      <div class="step"><span class="step-num">01</span><div class="step-title" data-i="p1_title">Contact</div><div class="step-desc" data-i="p1_desc">Tu m'envoies un message avec ton besoin. Je réponds sous 24h.</div></div>
+      <div class="step"><span class="step-num">02</span><div class="step-title" data-i="p2_title">Devis gratuit</div><div class="step-desc" data-i="p2_desc">Je t'envoie un devis détaillé. Aucun engagement, aucune surprise.</div></div>
+      <div class="step"><span class="step-num">03</span><div class="step-title" data-i="p3_title">Contrat &amp; scope</div><div class="step-desc" data-i="p3_desc">Pour les prestations sécu, on signe un contrat qui définit le périmètre. Obligatoire et ça te protège aussi.</div></div>
+      <div class="step"><span class="step-num">04</span><div class="step-title" data-i="p4_title">Livraison</div><div class="step-desc" data-i="p4_desc">Rapport clair, recommandations actionnables, appel de restitution si besoin.</div></div>
     </div>
   </section>
 </div>
 
-<div id="contact" style="max-width:1100px;margin:0 auto">
+<div id="contact" class="section-wrap">
   <section>
-    <div class="section-tag">contact</div>
-    <h2>Parlons de votre projet</h2>
+    <div class="section-tag" data-i="s_contact_tag">contact</div>
+    <h2 data-i="s_contact_title">Parlons de votre projet</h2>
     <div class="contact-grid">
       <div class="contact-info">
-        <p style="font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:1rem">Devis gratuit et sans engagement. Je réponds généralement sous 24h. N'hésite pas même si tu n'es pas sûr de ce dont tu as besoin.</p>
+        <p style="font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:1rem" data-i="contact_intro">Devis gratuit et sans engagement. Je réponds généralement sous 24h. N'hésite pas même si tu n'es pas sûr de ce dont tu as besoin.</p>
         <div class="contact-item">
           <div class="contact-icon">&gt;_</div>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-val"><a href="mailto:obrsmilan@gmail.com">obrsmilan@gmail.com</a></div>
-          </div>
+          <div><div class="contact-label">Email</div><div class="contact-val"><a href="mailto:obrsmilan@gmail.com">obrsmilan@gmail.com</a></div></div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">//</div>
-          <div>
-            <div class="contact-label">LinkedIn</div>
-            <div class="contact-val"><a href="https://www.linkedin.com/in/milan-obradors" target="_blank" rel="noopener">linkedin.com/in/milan-obradors</a></div>
-          </div>
+          <div><div class="contact-label">LinkedIn</div><div class="contact-val"><a href="https://www.linkedin.com/in/milan-obradors" target="_blank" rel="noopener">linkedin.com/in/milan-obradors</a></div></div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">gh</div>
-          <div>
-            <div class="contact-label">GitHub</div>
-            <div class="contact-val"><a href="https://github.com/milan-sec" target="_blank" rel="noopener">github.com/milan-sec</a></div>
-          </div>
+          <div><div class="contact-label">GitHub</div><div class="contact-val"><a href="https://github.com/milan-sec" target="_blank" rel="noopener">github.com/milan-sec</a></div></div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">⚑</div>
-          <div>
-            <div class="contact-label">Localisation</div>
-            <div class="contact-val">Toulouse — Remote OK toute la France</div>
-          </div>
+          <div><div class="contact-label" data-i="loc_label">Localisation</div><div class="contact-val" data-i="loc_val">Toulouse — Remote OK toute la France</div></div>
         </div>
       </div>
       <div class="contact-form">
         <div class="form-row">
           <div class="form-group">
-            <label class="form-label">Prénom / Société</label>
+            <label class="form-label" data-i="f_name">Prénom / Société</label>
             <input class="form-input" type="text" id="fname" placeholder="Jean Dupont">
           </div>
           <div class="form-group">
@@ -506,30 +469,27 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="form-label">Service souhaité</label>
+          <label class="form-label" data-i="f_service">Service souhaité</label>
           <select class="form-select form-input" id="fservice">
-            <option value="">— Choisir un service —</option>
-            <option>Audit de sécurité basique</option>
-            <option>Test de pénétration web</option>
-            <option>Configuration réseau sécurisée</option>
-            <option>Atelier anti-phishing</option>
-            <option>Site vitrine / portfolio</option>
-            <option>Support tech &amp; Linux</option>
-            <option>Cours particuliers</option>
-            <option>Recherche OSINT</option>
-            <option>Autre / Je sais pas encore</option>
+            <option value="" data-i="f_service_opt0">— Choisir un service —</option>
+            <option data-i="svc1_name">Audit de sécurité basique</option>
+            <option data-i="svc2_name">Test de pénétration web</option>
+            <option data-i="svc3_name">Configuration réseau sécurisée</option>
+            <option data-i="svc4_name">Atelier anti-phishing</option>
+            <option data-i="svc5_name">Site vitrine / portfolio</option>
+            <option data-i="svc6_name">Support tech &amp; Linux</option>
+            <option data-i="svc7_name">Cours particuliers info / sécu</option>
+            <option data-i="svc8_name">Recherche OSINT basique</option>
+            <option data-i="f_service_other">Autre / Je sais pas encore</option>
           </select>
         </div>
         <div class="form-group">
-          <label class="form-label">Ton besoin en quelques mots</label>
-          <textarea class="form-textarea" id="fmsg" placeholder="Décris ton projet ou ta problématique..."></textarea>
+          <label class="form-label" data-i="f_msg_label">Ton besoin en quelques mots</label>
+          <textarea class="form-textarea" id="fmsg" data-i-placeholder="f_msg_ph" placeholder="Décris ton projet ou ta problématique..."></textarea>
         </div>
-        <button class="form-submit" onclick="submitForm()">Envoyer →</button>
-        <div class="form-success" id="fsuccess">
-          ✓ Message envoyé ! Je te réponds sous 24h à l'adresse indiquée.<br>
-          En attendant : <a href="mailto:obrsmilan@gmail.com" style="color:var(--green)">obrsmilan@gmail.com</a>
-        </div>
-        <p class="form-note">Aucune donnée partagée avec des tiers. Réponse sous 24h garantie.</p>
+        <button class="form-submit" onclick="submitForm()" data-i="f_submit">Envoyer →</button>
+        <div class="form-success" id="fsuccess" data-i="f_success">✓ Message envoyé ! Je te réponds sous 24h. En attendant : obrsmilan@gmail.com</div>
+        <p class="form-note" data-i="f_note">Aucune donnée partagée avec des tiers. Réponse sous 24h garantie.</p>
       </div>
     </div>
   </section>
@@ -547,34 +507,225 @@
 </footer>
 
 <script>
-const cur=document.getElementById('cur');
-const ring=document.getElementById('ring');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  cur.style.left=(mx-6)+'px';cur.style.top=(my-6)+'px';
-});
-function animRing(){
-  rx+=(mx-rx-16)*0.12;ry+=(my-ry-16)*0.12;
-  ring.style.left=rx+'px';ring.style.top=ry+'px';
-  requestAnimationFrame(animRing);
-}
-animRing();
-document.querySelectorAll('a,button,.btn-primary,.btn-outline,.form-submit,.service-card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.transform='scale(2)';ring.style.transform='scale(1.5)'});
-  el.addEventListener('mouseleave',()=>{cur.style.transform='scale(1)';ring.style.transform='scale(1)'});
-});
+// ── TRANSLATIONS ──────────────────────────────────────────────
+const T = {
+  fr: {
+    nav_services:'Services', nav_about:'Profil', nav_process:'Process', nav_contact:'Contact',
+    hero_tag:'cybersécurité · réseaux · toulouse & remote',
+    hero_title:'Cybersécurité & Réseau',
+    hero_sub:'Étudiant en <span class="hl">pentest & réseaux</span>, je propose des services de sécurité accessibles pour les <span class="hl">PME, freelances et particuliers</span>. Des tarifs débutant, un travail sérieux.',
+    hero_cta1:'Voir les services', hero_cta2:'Me contacter',
+    status_avail_label:'Disponibilité', status_avail:'Disponible',
+    status_loc_label:'Localisation', status_remote:'OK toute la France',
+    status_reply_label:'Réponse',
+    term1:'Milan Obradors — Étudiant Cybersécurité & Réseaux (Bac+2)',
+    term2:'Orientation: pentest, red team, cloud & networking',
+    term3:'Localisation: Toulouse — remote OK partout en France',
+    term4:'Alternance: septembre 2025 (grandes entreprises visées)',
+    term5:'→ Tarifs bas = idéal pour les TPE/PME et particuliers',
+    term6:'→ Travail documenté et transparent',
+    term7:'→ Réponse rapide, communication claire',
+    term8:'→ Pas encore senior, mais sérieux et motivé ✓',
+    s_services_tag:'services', s_services_title:'Ce que je propose',
+    s_services_desc:'Tous les services incluent un rapport ou livrable clair. Devis gratuit avant toute prestation.',
+    badge_pop:'POPULAIRE',
+    cat1:'AUDIT · SÉCURITÉ', cat2:'PENTEST · WEB', cat3:'RÉSEAU · CONFIG',
+    cat4:'FORMATION · SENSIBILISATION', cat5:'DEV · WEB', cat6:'SUPPORT · ADMIN SYS',
+    cat7:'COURS · TUTORAT', cat8:'OSINT · INVESTIGATION',
+    svc1_name:'Audit de sécurité basique', svc1_desc:'Scan de vulnérabilités, rapport avec recommandations, adapté aux PME et sites web perso.',
+    svc1_i1:'Scan Nmap + énumération des ports', svc1_i2:'Détection des CVE connues', svc1_i3:'Rapport PDF avec priorités', svc1_i4:'Appel de restitution inclus',
+    svc2_name:'Test de pénétration web', svc2_desc:'Test OWASP Top 10 sur votre site ou application web. Contrat signé obligatoire, scope défini.',
+    svc2_i2:"Test d'authentification & sessions", svc2_i3:'Rapport technique + executive summary', svc2_i4:'Retests inclus sur les vulnérabilités',
+    svc3_name:'Configuration réseau sécurisée', svc3_desc:'Mise en place ou audit de votre infrastructure réseau pour TPE, télétravail ou homelab.',
+    svc3_i1:'Config firewall (pfSense, iptables)', svc3_i2:'Mise en place VPN (WireGuard, OpenVPN)', svc3_i3:'Segmentation VLAN',
+    svc4_name:'Atelier anti-phishing', svc4_desc:'Formation 1h pour vos équipes : reconnaître les arnaques, les bons réflexes, simulation incluse.',
+    svc4_i1:'Présentation interactive', svc4_i2:'Simulation de phishing (avec accord)', svc4_i3:'Guide de bonnes pratiques offert', svc4_i4:'Format présentiel ou visio',
+    svc5_name:'Site vitrine / portfolio', svc5_desc:'Site web simple, rapide et optimisé SEO pour indépendants, artisans ou petits commerces.',
+    svc5_i1:'HTML/CSS/JS vanilla — ultra rapide', svc5_i2:'Design responsive mobile', svc5_i3:'Formulaire de contact fonctionnel', svc5_i4:'Hébergement conseillé inclus',
+    svc6_name:'Support tech & Linux', svc6_desc:'Installation, config, dépannage Linux ou Windows. Homelab, NAS, sauvegardes — je gère.',
+    svc6_i1:'Installation Linux (Ubuntu, Debian, Arch)', svc6_i2:'Setup Proxmox / machines virtuelles', svc6_i3:'Configuration NAS & backups', svc6_i4:'Dépannage réseau maison',
+    svc7_name:'Cours particuliers info / sécu', svc7_desc:'Aide aux devoirs, projets scolaires ou apprentissage autonome pour BTS SIO, BUT Info, autodidactes.',
+    svc7_i1:'Réseaux (CCNA, TCP/IP, subnetting)', svc7_i2:'Linux & scripting bash/Python', svc7_i3:'Cybersécurité débutant', svc7_i4:'Aide projets BTS/BUT',
+    svc8_name:'Recherche OSINT basique', svc8_desc:'Collecte d\'informations publiques sur une entité (entreprise, domaine, profil) dans un cadre légal.',
+    svc8_i1:'Analyse de domaine (Shodan, Whois)', svc8_i2:'Google Dorks, métadonnées', svc8_i3:'Rapport structuré', svc8_i4:'Cadre légal strict respecté',
+    from:'à partir de', per_job:'/ prestation', per_hour:'/ heure', per_session:'/ session', per_site:'/ site', per_report:'/ rapport',
+    s_about_tag:'profil', s_about_title:'Qui suis-je ?',
+    about_p1:'Je suis <span class="hl">Milan Obradors</span>, étudiant en 2e année dans un cursus cybersécurité & réseaux, avec une orientation pentest et red team. Je me prépare à une alternance dans de grandes entreprises (banques, telcos) à partir de septembre 2025.',
+    about_p2:'Basé à <span class="hl">Toulouse</span>, je travaille aussi en <span class="hl">remote</span> partout en France. En attendant l\'alternance, je propose mes compétences à des tarifs accessibles — idéal pour les PME et particuliers qui ne peuvent pas se payer un cabinet senior.',
+    about_p3:'Je m\'entraîne régulièrement sur <span class="hl">TryHackMe</span> et <span class="hl">HackTheBox</span>, et je documente tout sur GitHub. Mes tarifs sont bas, mon sérieux ne l\'est pas.',
+    s_process_tag:'comment ça marche', s_process_title:'Le processus',
+    p1_title:'Contact', p1_desc:"Tu m'envoies un message avec ton besoin. Je réponds sous 24h.",
+    p2_title:'Devis gratuit', p2_desc:'Je t\'envoie un devis détaillé. Aucun engagement, aucune surprise.',
+    p3_title:'Contrat & scope', p3_desc:'Pour les prestations sécu, on signe un contrat qui définit le périmètre. Obligatoire et ça te protège aussi.',
+    p4_title:'Livraison', p4_desc:'Rapport clair, recommandations actionnables, appel de restitution si besoin.',
+    s_contact_tag:'contact', s_contact_title:'Parlons de votre projet',
+    contact_intro:'Devis gratuit et sans engagement. Je réponds généralement sous 24h. N\'hésite pas même si tu n\'es pas sûr de ce dont tu as besoin.',
+    loc_label:'Localisation', loc_val:'Toulouse — Remote OK toute la France',
+    f_name:'Prénom / Société', f_service:'Service souhaité',
+    f_service_opt0:'— Choisir un service —', f_service_other:'Autre / Je sais pas encore',
+    f_msg_label:'Ton besoin en quelques mots', f_msg_ph:'Décris ton projet ou ta problématique...',
+    f_submit:'Envoyer →', f_success:'✓ Message envoyé ! Je te réponds sous 24h.',
+    f_note:'Aucune donnée partagée avec des tiers. Réponse sous 24h garantie.',
+    theme_day:'☀ Jour', theme_night:'☾ Nuit',
+  },
+  en: {
+    nav_services:'Services', nav_about:'Profile', nav_process:'Process', nav_contact:'Contact',
+    hero_tag:'cybersecurity · networks · toulouse & remote',
+    hero_title:'Cybersecurity & Networking',
+    hero_sub:'Cybersecurity student specializing in <span class="hl">pentest & networks</span>, offering accessible security services for <span class="hl">SMBs, freelancers & individuals</span>. Entry-level rates, professional work.',
+    hero_cta1:'View services', hero_cta2:'Contact me',
+    status_avail_label:'Availability', status_avail:'Available',
+    status_loc_label:'Location', status_remote:'OK all over France',
+    status_reply_label:'Response',
+    term1:'Milan Obradors — Cybersecurity & Networks student (2-year degree)',
+    term2:'Focus: pentest, red team, cloud & networking',
+    term3:'Location: Toulouse — remote OK anywhere in France',
+    term4:'Work-study: September 2025 (targeting large enterprises)',
+    term5:'→ Low rates = perfect for SMBs & individuals',
+    term6:'→ Documented and transparent work',
+    term7:'→ Fast response, clear communication',
+    term8:'→ Not yet senior, but serious and motivated ✓',
+    s_services_tag:'services', s_services_title:'What I offer',
+    s_services_desc:'All services include a clear report or deliverable. Free quote before any work.',
+    badge_pop:'POPULAR',
+    cat1:'AUDIT · SECURITY', cat2:'PENTEST · WEB', cat3:'NETWORK · CONFIG',
+    cat4:'TRAINING · AWARENESS', cat5:'DEV · WEB', cat6:'SUPPORT · SYSADMIN',
+    cat7:'TUTORING · TEACHING', cat8:'OSINT · INVESTIGATION',
+    svc1_name:'Basic security audit', svc1_desc:'Vulnerability scan with recommendations report, suited for SMBs and personal websites.',
+    svc1_i1:'Nmap scan + port enumeration', svc1_i2:'Known CVE detection', svc1_i3:'PDF report with priorities', svc1_i4:'Debrief call included',
+    svc2_name:'Web penetration test', svc2_desc:'OWASP Top 10 test on your website or web app. Signed contract required, defined scope.',
+    svc2_i2:'Authentication & session testing', svc2_i3:'Technical report + executive summary', svc2_i4:'Retests included on findings',
+    svc3_name:'Secure network configuration', svc3_desc:'Setup or audit of your network infrastructure for small businesses, remote work or homelab.',
+    svc3_i1:'Firewall config (pfSense, iptables)', svc3_i2:'VPN setup (WireGuard, OpenVPN)', svc3_i3:'VLAN segmentation',
+    svc4_name:'Anti-phishing workshop', svc4_desc:'1h training for your team: spotting scams, best practices, simulation included.',
+    svc4_i1:'Interactive presentation', svc4_i2:'Phishing simulation (with consent)', svc4_i3:'Best practices guide included', svc4_i4:'In-person or remote format',
+    svc5_name:'Landing page / portfolio site', svc5_desc:'Simple, fast and SEO-optimized website for freelancers, craftsmen or small businesses.',
+    svc5_i1:'Vanilla HTML/CSS/JS — blazing fast', svc5_i2:'Mobile responsive design', svc5_i3:'Working contact form', svc5_i4:'Hosting advice included',
+    svc6_name:'Tech support & Linux', svc6_desc:'Linux or Windows install, config, troubleshooting. Homelab, NAS, backups — I handle it.',
+    svc6_i1:'Linux install (Ubuntu, Debian, Arch)', svc6_i2:'Proxmox / virtual machine setup', svc6_i3:'NAS & backup configuration', svc6_i4:'Home network troubleshooting',
+    svc7_name:'Private tutoring — IT / security', svc7_desc:'Homework help, school projects or self-learning for IT students and beginners.',
+    svc7_i1:'Networking (CCNA, TCP/IP, subnetting)', svc7_i2:'Linux & bash/Python scripting', svc7_i3:'Beginner cybersecurity', svc7_i4:'Student project assistance',
+    svc8_name:'Basic OSINT research', svc8_desc:'Collection of public information on an entity (company, domain, profile) in a legal framework.',
+    svc8_i1:'Domain analysis (Shodan, Whois)', svc8_i2:'Google Dorks, metadata', svc8_i3:'Structured report', svc8_i4:'Strict legal framework respected',
+    from:'starting at', per_job:'/ job', per_hour:'/ hour', per_session:'/ session', per_site:'/ site', per_report:'/ report',
+    s_about_tag:'profile', s_about_title:'Who am I?',
+    about_p1:'I\'m <span class="hl">Milan Obradors</span>, a 2nd-year cybersecurity & networking student in France, focused on pentest and red team. I\'m preparing for a work-study contract at a large company (bank, telecom) starting September 2025.',
+    about_p2:'Based in <span class="hl">Toulouse</span>, I also work <span class="hl">remotely</span> anywhere in France. In the meantime, I offer my skills at accessible rates — ideal for SMBs and individuals who can\'t afford a senior firm.',
+    about_p3:'I train regularly on <span class="hl">TryHackMe</span> and <span class="hl">HackTheBox</span>, documenting everything on GitHub. My rates are entry-level, my work ethic isn\'t.',
+    s_process_tag:'how it works', s_process_title:'The process',
+    p1_title:'Contact', p1_desc:'Send me a message about your need. I reply within 24h.',
+    p2_title:'Free quote', p2_desc:'I send you a detailed quote. No commitment, no surprises.',
+    p3_title:'Contract & scope', p3_desc:'For security services, we sign a contract defining the perimeter. Required — and it protects you too.',
+    p4_title:'Delivery', p4_desc:'Clear report, actionable recommendations, debrief call if needed.',
+    s_contact_tag:'contact', s_contact_title:"Let's talk about your project",
+    contact_intro:"Free quote with no commitment. I usually reply within 24h. Don't hesitate even if you're not sure what you need.",
+    loc_label:'Location', loc_val:'Toulouse — Remote OK all over France',
+    f_name:'Name / Company', f_service:'Service needed',
+    f_service_opt0:'— Choose a service —', f_service_other:"Other / I'm not sure yet",
+    f_msg_label:'Your need in a few words', f_msg_ph:'Describe your project or problem...',
+    f_submit:'Send →', f_success:'✓ Message sent! I\'ll reply within 24h.',
+    f_note:'No data shared with third parties. Reply guaranteed within 24h.',
+    theme_day:'☀ Light', theme_night:'☾ Dark',
+  },
+  es: {
+    nav_services:'Servicios', nav_about:'Perfil', nav_process:'Proceso', nav_contact:'Contacto',
+    hero_tag:'ciberseguridad · redes · toulouse & remoto',
+    hero_title:'Ciberseguridad & Redes',
+    hero_sub:'Estudiante de <span class="hl">pentest y redes</span>, ofrezco servicios de seguridad accesibles para <span class="hl">pymes, freelancers y particulares</span>. Precios de entrada, trabajo serio.',
+    hero_cta1:'Ver servicios', hero_cta2:'Contactarme',
+    status_avail_label:'Disponibilidad', status_avail:'Disponible',
+    status_loc_label:'Ubicación', status_remote:'OK en toda Francia',
+    status_reply_label:'Respuesta',
+    term1:'Milan Obradors — Estudiante Ciberseguridad & Redes (Bac+2)',
+    term2:'Orientación: pentest, red team, cloud & networking',
+    term3:'Ubicación: Toulouse — remoto OK en toda Francia',
+    term4:'Prácticas: septiembre 2025 (grandes empresas)',
+    term5:'→ Precios bajos = ideal para pymes y particulares',
+    term6:'→ Trabajo documentado y transparente',
+    term7:'→ Respuesta rápida, comunicación clara',
+    term8:'→ No soy senior aún, pero serio y motivado ✓',
+    s_services_tag:'servicios', s_services_title:'Lo que ofrezco',
+    s_services_desc:'Todos los servicios incluyen un informe o entregable claro. Presupuesto gratuito antes de cualquier trabajo.',
+    badge_pop:'POPULAR',
+    cat1:'AUDITORÍA · SEGURIDAD', cat2:'PENTEST · WEB', cat3:'RED · CONFIG',
+    cat4:'FORMACIÓN · CONCIENCIACIÓN', cat5:'DEV · WEB', cat6:'SOPORTE · SYSADMIN',
+    cat7:'CLASES · TUTORÍA', cat8:'OSINT · INVESTIGACIÓN',
+    svc1_name:'Auditoría de seguridad básica', svc1_desc:'Escaneo de vulnerabilidades con informe de recomendaciones, adaptado a pymes y sitios web personales.',
+    svc1_i1:'Escaneo Nmap + enumeración de puertos', svc1_i2:'Detección de CVE conocidas', svc1_i3:'Informe PDF con prioridades', svc1_i4:'Llamada de restitución incluida',
+    svc2_name:'Test de penetración web', svc2_desc:'Test OWASP Top 10 en tu web o aplicación. Contrato firmado obligatorio, alcance definido.',
+    svc2_i2:'Test de autenticación & sesiones', svc2_i3:'Informe técnico + resumen ejecutivo', svc2_i4:'Retests incluidos en las vulnerabilidades',
+    svc3_name:'Configuración de red segura', svc3_desc:'Implantación o auditoría de tu infraestructura de red para pymes, teletrabajo o homelab.',
+    svc3_i1:'Config firewall (pfSense, iptables)', svc3_i2:'Configuración VPN (WireGuard, OpenVPN)', svc3_i3:'Segmentación VLAN',
+    svc4_name:'Taller anti-phishing', svc4_desc:'Formación de 1h para tu equipo: detectar estafas, buenas prácticas, simulación incluida.',
+    svc4_i1:'Presentación interactiva', svc4_i2:'Simulación de phishing (con consentimiento)', svc4_i3:'Guía de buenas prácticas incluida', svc4_i4:'Formato presencial o remoto',
+    svc5_name:'Web corporativa / portfolio', svc5_desc:'Sitio web simple, rápido y optimizado para SEO para autónomos, artesanos o pequeños comercios.',
+    svc5_i1:'HTML/CSS/JS vanilla — ultra rápido', svc5_i2:'Diseño responsive móvil', svc5_i3:'Formulario de contacto funcional', svc5_i4:'Consejo de alojamiento incluido',
+    svc6_name:'Soporte técnico & Linux', svc6_desc:'Instalación, configuración, solución de problemas Linux o Windows. Homelab, NAS, copias de seguridad.',
+    svc6_i1:'Instalación Linux (Ubuntu, Debian, Arch)', svc6_i2:'Setup Proxmox / máquinas virtuales', svc6_i3:'Configuración NAS & backups', svc6_i4:'Resolución de problemas de red doméstica',
+    svc7_name:'Clases particulares informática / seguridad', svc7_desc:'Ayuda con deberes, proyectos escolares o aprendizaje autónomo para estudiantes de informática.',
+    svc7_i1:'Redes (CCNA, TCP/IP, subnetting)', svc7_i2:'Linux & scripting bash/Python', svc7_i3:'Ciberseguridad para principiantes', svc7_i4:'Ayuda con proyectos universitarios',
+    svc8_name:'Investigación OSINT básica', svc8_desc:'Recopilación de información pública sobre una entidad (empresa, dominio, perfil) en un marco legal.',
+    svc8_i1:'Análisis de dominio (Shodan, Whois)', svc8_i2:'Google Dorks, metadatos', svc8_i3:'Informe estructurado', svc8_i4:'Marco legal estricto respetado',
+    from:'desde', per_job:'/ servicio', per_hour:'/ hora', per_session:'/ sesión', per_site:'/ sitio', per_report:'/ informe',
+    s_about_tag:'perfil', s_about_title:'¿Quién soy?',
+    about_p1:'Soy <span class="hl">Milan Obradors</span>, estudiante de 2º año en ciberseguridad & redes en Francia, con orientación en pentest y red team. Me preparo para unas prácticas en grandes empresas (bancos, telcos) a partir de septiembre 2025.',
+    about_p2:'Basado en <span class="hl">Toulouse</span>, también trabajo en <span class="hl">remoto</span> en toda Francia. Mientras tanto, ofrezco mis habilidades a precios accesibles — ideal para pymes y particulares que no pueden pagar una consultora senior.',
+    about_p3:'Me entreno regularmente en <span class="hl">TryHackMe</span> y <span class="hl">HackTheBox</span>, documentando todo en GitHub. Mis precios son bajos, mi seriedad no.',
+    s_process_tag:'cómo funciona', s_process_title:'El proceso',
+    p1_title:'Contacto', p1_desc:'Me envías un mensaje con tu necesidad. Respondo en menos de 24h.',
+    p2_title:'Presupuesto gratis', p2_desc:'Te envío un presupuesto detallado. Sin compromiso, sin sorpresas.',
+    p3_title:'Contrato & alcance', p3_desc:'Para servicios de seguridad, firmamos un contrato que define el perímetro. Obligatorio y te protege también.',
+    p4_title:'Entrega', p4_desc:'Informe claro, recomendaciones accionables, llamada de restitución si es necesario.',
+    s_contact_tag:'contacto', s_contact_title:'Hablemos de tu proyecto',
+    contact_intro:'Presupuesto gratuito y sin compromiso. Suelo responder en menos de 24h. No dudes en escribirme aunque no estés seguro de lo que necesitas.',
+    loc_label:'Ubicación', loc_val:'Toulouse — Remoto OK en toda Francia',
+    f_name:'Nombre / Empresa', f_service:'Servicio deseado',
+    f_service_opt0:'— Elige un servicio —', f_service_other:'Otro / No estoy seguro aún',
+    f_msg_label:'Tu necesidad en pocas palabras', f_msg_ph:'Describe tu proyecto o problema...',
+    f_submit:'Enviar →', f_success:'✓ ¡Mensaje enviado! Te respondo en menos de 24h.',
+    f_note:'Ningún dato compartido con terceros. Respuesta garantizada en 24h.',
+    theme_day:'☀ Claro', theme_night:'☾ Oscuro',
+  }
+};
 
-function submitForm(){
-  const name=document.getElementById('fname').value;
-  const email=document.getElementById('femail').value;
-  const service=document.getElementById('fservice').value;
-  const msg=document.getElementById('fmsg').value;
-  if(!name||!email||!msg){alert('Remplis au moins ton nom, email et message !');return;}
-  const mailto=`mailto:obrsmilan@gmail.com?subject=Demande de devis — ${encodeURIComponent(service||'Service')}&body=Nom: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
-  window.location.href=mailto;
-  document.getElementById('fsuccess').style.display='block';
+let currentLang = 'fr';
+let isDark = true;
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === lang.toUpperCase()));
+  const t = T[lang];
+  document.querySelectorAll('[data-i]').forEach(el => {
+    const key = el.getAttribute('data-i');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i-placeholder');
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+  document.getElementById('themeBtn').textContent = isDark ? t.theme_night : t.theme_day;
+  document.documentElement.lang = lang;
 }
+
+function toggleTheme() {
+  isDark = !isDark;
+  document.body.classList.toggle('light', !isDark);
+  document.getElementById('themeBtn').textContent = isDark ? T[currentLang].theme_night : T[currentLang].theme_day;
+}
+
+function submitForm() {
+  const name = document.getElementById('fname').value;
+  const email = document.getElementById('femail').value;
+  const service = document.getElementById('fservice').value;
+  const msg = document.getElementById('fmsg').value;
+  if (!name || !email || !msg) { alert('Remplis au moins ton nom, email et message !'); return; }
+  const mailto = `mailto:obrsmilan@gmail.com?subject=Demande — ${encodeURIComponent(service||'Service')}&body=Nom: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
+  window.location.href = mailto;
+  document.getElementById('fsuccess').style.display = 'block';
+}
+
+// Init
+setLang('fr');
 </script>
 </body>
 </html>
