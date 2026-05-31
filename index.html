@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Milan Obradors — Cybersécurité Freelance">
 <meta name="twitter:description" content="Pentest, audit sécu, réseau, formation. Tarifs débutant, sérieux pro. Toulouse & remote.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Milan Obradors","jobTitle":"Étudiant Cybersécurité & Freelance","url":"https://milan-sec.fr","email":"obrsmilan@gmail.com","sameAs":["https://www.linkedin.com/in/milan-obradors","https://github.com/milan-sec"],"address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressCountry":"FR"},"knowsAbout":["Cybersécurité","Pentest","Réseaux","Linux","OWASP"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Milan Obradors","jobTitle":"Étudiant Cybersécurité & Freelance","url":"https://milan-sec.fr","email":"contact.milansec@gmail.com","sameAs":["https://www.linkedin.com/in/milan-obradors","https://github.com/milan-sec"],"address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressCountry":"FR"},"knowsAbout":["Cybersécurité","Pentest","Réseaux","Linux","OWASP"]}</script>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -36,7 +36,7 @@ body.light{
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;overflow-x:hidden;transition:background 0.3s,color 0.3s}
 ::selection{background:var(--green);color:#000}
-
+ 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 2rem;transition:background 0.3s}
 body.light nav{background:rgba(245,245,240,0.92)}
@@ -46,27 +46,27 @@ body.light nav{background:rgba(245,245,240,0.92)}
 .nav-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:1px;transition:color 0.2s}
 .nav-links a:hover{color:var(--green)}
-
+ 
 /* CONTROLS BAR */
 .nav-controls{display:flex;align-items:center;gap:8px}
-
+ 
 /* LANG SWITCHER */
 .lang-switcher{display:flex;border:1px solid var(--border);overflow:hidden;border-radius:4px}
 .lang-btn{background:transparent;border:none;color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;padding:5px 9px;cursor:pointer;transition:all 0.2s}
 .lang-btn:not(:last-child){border-right:1px solid var(--border)}
 .lang-btn.active{background:var(--green);color:#000;font-weight:700}
 .lang-btn:hover:not(.active){color:var(--green)}
-
+ 
 /* THEME TOGGLE */
 .theme-toggle{background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 10px;cursor:pointer;transition:all 0.2s;border-radius:4px;white-space:nowrap}
 .theme-toggle:hover{color:var(--green);border-color:var(--green)}
-
+ 
 /* SCANLINE — dark only */
 .scanline{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,136,0.012) 2px,rgba(0,255,136,0.012) 4px);transition:opacity 0.3s}
 body.light .scanline{opacity:0}
-
+ 
 section{max-width:1100px;margin:0 auto;padding:0 2rem}
-
+ 
 /* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero-content{position:relative;z-index:2;padding-top:56px}
@@ -84,13 +84,13 @@ h1 .cursor-blink{display:inline-block;width:3px;height:0.85em;background:var(--g
 .btn-outline:hover{background:rgba(0,255,136,0.08);transform:translate(-2px,-2px)}
 .hero-grid{position:absolute;right:-100px;top:50%;transform:translateY(-50%);opacity:0.03;font-size:10px;color:var(--green);line-height:1.6;white-space:pre;user-select:none}
 body.light .hero-grid{opacity:0.06}
-
+ 
 .status-bar{display:flex;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}
 .status-item{display:flex;flex-direction:column;gap:4px}
 .status-label{font-size:10px;color:var(--muted);letter-spacing:2px}
 .status-value{font-size:12px;color:var(--green)}
 .status-dot{width:6px;height:6px;background:var(--green);border-radius:50%;display:inline-block;margin-right:6px;animation:pulse 2s infinite}
-
+ 
 /* TERMINAL */
 .terminal-box{background:var(--bg2);border:1px solid var(--border);margin:5rem auto;padding:0;max-width:680px;font-size:12px;transition:background 0.3s,border-color 0.3s}
 .terminal-header{background:var(--bg3);padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
@@ -104,14 +104,14 @@ body.light .hero-grid{opacity:0.06}
 .t-out{color:var(--muted);padding-left:1rem}
 .t-out.success{color:var(--green)}
 .t-out.warn{color:var(--amber)}
-
+ 
 /* SECTIONS */
 .section-wrap{max-width:1100px;margin:0 auto}
 .section-tag{font-size:10px;color:var(--green);letter-spacing:3px;margin-bottom:0.75rem;opacity:0.8}
 .section-tag::before{content:'// '}
 h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color:var(--text);margin-bottom:0.5rem}
 .section-desc{color:var(--muted);font-size:12px;max-width:500px;line-height:1.8}
-
+ 
 /* SERVICES */
 #services{padding:5rem 2rem}
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--border);margin-top:2.5rem}
@@ -130,7 +130,7 @@ h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color
 .price-val{font-family:'Space Mono',monospace;font-size:18px;color:var(--green);font-weight:700}
 .price-unit{font-size:10px;color:var(--muted)}
 .badge-pop{font-size:8px;letter-spacing:2px;background:var(--green3);color:var(--green);padding:2px 8px;border:1px solid var(--green);position:absolute;top:1.25rem;right:1.25rem}
-
+ 
 /* ABOUT */
 #about{padding:5rem 2rem;border-top:1px solid var(--border)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2rem}
@@ -144,7 +144,7 @@ h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color
 .skill-fill{height:100%;background:var(--green);position:relative;transition:width 0.8s ease}
 .skill-fill::after{content:'';position:absolute;right:0;top:-3px;width:7px;height:7px;background:var(--green);border-radius:50%}
 .skill-pct{font-size:10px;color:var(--green);width:32px;text-align:right}
-
+ 
 /* PROCESS */
 #process{padding:5rem 2rem;border-top:1px solid var(--border)}
 .process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;margin-top:2.5rem}
@@ -152,7 +152,7 @@ h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color
 .step-num{position:absolute;left:0;top:0;font-family:'Space Mono',monospace;font-size:10px;color:var(--green);opacity:0.5}
 .step-title{font-family:'Space Mono',monospace;font-size:13px;color:var(--text);margin-bottom:0.5rem}
 .step-desc{font-size:11px;color:var(--muted);line-height:1.7}
-
+ 
 /* CONTACT */
 #contact{padding:5rem 2rem;border-top:1px solid var(--border)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2.5rem}
@@ -173,9 +173,11 @@ h2{font-family:'Space Mono',monospace;font-size:clamp(1.4rem,2.5vw,2.2rem);color
 .form-textarea{resize:vertical;min-height:90px}
 .form-submit{background:var(--green);color:#000;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;padding:13px 28px;border:none;cursor:pointer;transition:all 0.2s;align-self:flex-start}
 .form-submit:hover{background:var(--green2);transform:translate(-2px,-2px)}
+.form-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none}
 .form-note{font-size:10px;color:var(--muted);line-height:1.6}
 .form-success{display:none;background:var(--green3);border:1px solid var(--green);padding:1rem;color:var(--green);font-size:11px;line-height:1.6}
-
+.form-error{display:none;background:rgba(255,90,90,0.1);border:1px solid #ff5f57;padding:1rem;color:#ff5f57;font-size:11px;line-height:1.6}
+ 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
@@ -183,13 +185,13 @@ footer{border-top:1px solid var(--border);padding:2rem}
 .footer-links{display:flex;gap:1.5rem}
 .footer-links a{font-size:10px;color:var(--muted);text-decoration:none;transition:color 0.2s}
 .footer-links a:hover{color:var(--green)}
-
+ 
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .fade-up{animation:fadeUp 0.6s ease both}
 .delay-1{animation-delay:0.1s}.delay-2{animation-delay:0.2s}.delay-3{animation-delay:0.3s}.delay-4{animation-delay:0.4s}
-
+ 
 @media(max-width:700px){
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
@@ -201,9 +203,9 @@ footer{border-top:1px solid var(--border);padding:2rem}
 </style>
 </head>
 <body>
-
+ 
 <div class="scanline"></div>
-
+ 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo"><span>~/ </span>milan-sec</div>
@@ -223,7 +225,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
     </div>
   </div>
 </nav>
-
+ 
 <div id="hero">
   <section class="hero-content">
     <div class="hero-tag fade-up" data-i="hero_tag">cybersécurité · réseaux · toulouse & remote</div>
@@ -259,7 +261,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
 10101010 11110000 01010101 00001111
 00110011 10101010 01110100 10110001</div>
 </div>
-
+ 
 <div style="max-width:680px;margin:0 auto;padding:0 2rem">
   <div class="terminal-box">
     <div class="terminal-header">
@@ -280,7 +282,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
     </div>
   </div>
 </div>
-
+ 
 <div id="services" class="section-wrap">
   <div style="padding:0 2rem;margin-bottom:2rem">
     <div class="section-tag" data-i="s_services_tag">services</div>
@@ -288,7 +290,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
     <p class="section-desc" data-i="s_services_desc">Tous les services incluent un rapport ou livrable clair. Devis gratuit avant toute prestation.</p>
   </div>
   <div class="services-grid">
-
+ 
     <div class="service-card">
       <span class="badge-pop" data-i="badge_pop">POPULAIRE</span>
       <div class="service-cat" data-i="cat1">AUDIT · SECURITE</div>
@@ -302,7 +304,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">80€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat2">PENTEST · WEB</div>
       <div class="service-name" data-i="svc2_name">Test de pénétration web</div>
@@ -315,7 +317,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">150€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat3">RESEAU · CONFIG</div>
       <div class="service-name" data-i="svc3_name">Configuration réseau sécurisée</div>
@@ -328,7 +330,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">60€</span><span class="price-unit" data-i="per_job">/ prestation</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat4">FORMATION · SENSIBILISATION</div>
       <div class="service-name" data-i="svc4_name">Atelier anti-phishing</div>
@@ -341,7 +343,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">50€</span><span class="price-unit" data-i="per_session">/ session</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat5">DEV · WEB</div>
       <div class="service-name" data-i="svc5_name">Site vitrine / portfolio</div>
@@ -354,7 +356,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">120€</span><span class="price-unit" data-i="per_site">/ site</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat6">SUPPORT · ADMIN SYS</div>
       <div class="service-name" data-i="svc6_name">Support tech &amp; Linux</div>
@@ -367,7 +369,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">25€</span><span class="price-unit" data-i="per_hour">/ heure</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat7">COURS · TUTORAT</div>
       <div class="service-name" data-i="svc7_name">Cours particuliers info / sécu</div>
@@ -380,7 +382,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">20€</span><span class="price-unit" data-i="per_hour">/ heure</span></div>
     </div>
-
+ 
     <div class="service-card">
       <div class="service-cat" data-i="cat8">OSINT · INVESTIGATION</div>
       <div class="service-name" data-i="svc8_name">Recherche OSINT basique</div>
@@ -393,10 +395,10 @@ footer{border-top:1px solid var(--border);padding:2rem}
       </ul>
       <div class="service-price"><span class="price-from" data-i="from">à partir de</span><span class="price-val">40€</span><span class="price-unit" data-i="per_report">/ rapport</span></div>
     </div>
-
+ 
   </div>
 </div>
-
+ 
 <div id="about" class="section-wrap">
   <section>
     <div class="section-tag" data-i="s_about_tag">profil</div>
@@ -419,7 +421,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
     </div>
   </section>
 </div>
-
+ 
 <div id="process" class="section-wrap">
   <section>
     <div class="section-tag" data-i="s_process_tag">comment ça marche</div>
@@ -432,7 +434,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
     </div>
   </section>
 </div>
-
+ 
 <div id="contact" class="section-wrap">
   <section>
     <div class="section-tag" data-i="s_contact_tag">contact</div>
@@ -442,7 +444,7 @@ footer{border-top:1px solid var(--border);padding:2rem}
         <p style="font-size:12px;color:var(--muted);line-height:1.8;margin-bottom:1rem" data-i="contact_intro">Devis gratuit et sans engagement. Je réponds généralement sous 24h. N'hésite pas même si tu n'es pas sûr de ce dont tu as besoin.</p>
         <div class="contact-item">
           <div class="contact-icon">&gt;_</div>
-          <div><div class="contact-label">Email</div><div class="contact-val"><a href="mailto:obrsmilan@gmail.com">obrsmilan@gmail.com</a></div></div>
+          <div><div class="contact-label">Email</div><div class="contact-val"><a href="mailto:contact.milansec@gmail.com">contact.milansec@gmail.com</a></div></div>
         </div>
         <div class="contact-item">
           <div class="contact-icon">//</div>
@@ -487,26 +489,32 @@ footer{border-top:1px solid var(--border);padding:2rem}
           <label class="form-label" data-i="f_msg_label">Ton besoin en quelques mots</label>
           <textarea class="form-textarea" id="fmsg" data-i-placeholder="f_msg_ph" placeholder="Décris ton projet ou ta problématique..."></textarea>
         </div>
-        <button class="form-submit" onclick="submitForm()" data-i="f_submit">Envoyer →</button>
-        <div class="form-success" id="fsuccess" data-i="f_success">✓ Message envoyé ! Je te réponds sous 24h. En attendant : obrsmilan@gmail.com</div>
+        <button class="form-submit" id="fbtn" onclick="submitForm()" data-i="f_submit">Envoyer →</button>
+        <div class="form-success" id="fsuccess" data-i="f_success">✓ Message envoyé ! Je te réponds sous 24h.</div>
+        <div class="form-error" id="ferror" data-i="f_error">✗ Erreur lors de l'envoi. Réessaie ou écris-moi directement par email.</div>
         <p class="form-note" data-i="f_note">Aucune donnée partagée avec des tiers. Réponse sous 24h garantie.</p>
       </div>
     </div>
   </section>
 </div>
-
+ 
 <footer>
   <div class="footer-inner">
     <div class="footer-copy">© 2026 Milan Obradors — Cybersécurité &amp; Réseau Freelance · Toulouse</div>
     <div class="footer-links">
-      <a href="mailto:obrsmilan@gmail.com">Email</a>
+      <a href="mailto:contact.milansec@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/milan-obradors" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/milan-sec" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </footer>
-
+ 
 <script>
+// ── CONFIG ────────────────────────────────────────────────────
+// Remplace XXXXXXX par l'identifiant de ton formulaire Formspree
+// (le bout d'URL après /f/, donné dans ton dashboard Formspree)
+const FORMSPREE_URL = 'https://formspree.io/f/xwvzjykq';
+ 
 // ── TRANSLATIONS ──────────────────────────────────────────────
 const T = {
   fr: {
@@ -564,7 +572,8 @@ const T = {
     f_name:'Prénom / Société', f_service:'Service souhaité',
     f_service_opt0:'— Choisir un service —', f_service_other:'Autre / Je sais pas encore',
     f_msg_label:'Ton besoin en quelques mots', f_msg_ph:'Décris ton projet ou ta problématique...',
-    f_submit:'Envoyer →', f_success:'✓ Message envoyé ! Je te réponds sous 24h.',
+    f_submit:'Envoyer →', f_sending:'Envoi...', f_success:'✓ Message envoyé ! Je te réponds sous 24h.',
+    f_error:'✗ Erreur lors de l\'envoi. Réessaie ou écris-moi directement par email.',
     f_note:'Aucune donnée partagée avec des tiers. Réponse sous 24h garantie.',
     theme_day:'☀ Jour', theme_night:'☾ Nuit',
   },
@@ -623,7 +632,8 @@ const T = {
     f_name:'Name / Company', f_service:'Service needed',
     f_service_opt0:'— Choose a service —', f_service_other:"Other / I'm not sure yet",
     f_msg_label:'Your need in a few words', f_msg_ph:'Describe your project or problem...',
-    f_submit:'Send →', f_success:'✓ Message sent! I\'ll reply within 24h.',
+    f_submit:'Send →', f_sending:'Sending...', f_success:'✓ Message sent! I\'ll reply within 24h.',
+    f_error:'✗ Something went wrong. Please retry or email me directly.',
     f_note:'No data shared with third parties. Reply guaranteed within 24h.',
     theme_day:'☀ Light', theme_night:'☾ Dark',
   },
@@ -682,15 +692,16 @@ const T = {
     f_name:'Nombre / Empresa', f_service:'Servicio deseado',
     f_service_opt0:'— Elige un servicio —', f_service_other:'Otro / No estoy seguro aún',
     f_msg_label:'Tu necesidad en pocas palabras', f_msg_ph:'Describe tu proyecto o problema...',
-    f_submit:'Enviar →', f_success:'✓ ¡Mensaje enviado! Te respondo en menos de 24h.',
+    f_submit:'Enviar →', f_sending:'Enviando...', f_success:'✓ ¡Mensaje enviado! Te respondo en menos de 24h.',
+    f_error:'✗ Error al enviar. Inténtalo de nuevo o escríbeme directamente por email.',
     f_note:'Ningún dato compartido con terceros. Respuesta garantizada en 24h.',
     theme_day:'☀ Claro', theme_night:'☾ Oscuro',
   }
 };
-
+ 
 let currentLang = 'fr';
 let isDark = true;
-
+ 
 function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === lang.toUpperCase()));
@@ -706,24 +717,64 @@ function setLang(lang) {
   document.getElementById('themeBtn').textContent = isDark ? t.theme_night : t.theme_day;
   document.documentElement.lang = lang;
 }
-
+ 
 function toggleTheme() {
   isDark = !isDark;
   document.body.classList.toggle('light', !isDark);
   document.getElementById('themeBtn').textContent = isDark ? T[currentLang].theme_night : T[currentLang].theme_day;
 }
-
+ 
 function submitForm() {
-  const name = document.getElementById('fname').value;
-  const email = document.getElementById('femail').value;
+  const t = T[currentLang];
+  const name = document.getElementById('fname').value.trim();
+  const email = document.getElementById('femail').value.trim();
   const service = document.getElementById('fservice').value;
-  const msg = document.getElementById('fmsg').value;
-  if (!name || !email || !msg) { alert('Remplis au moins ton nom, email et message !'); return; }
-  const mailto = `mailto:obrsmilan@gmail.com?subject=Demande — ${encodeURIComponent(service||'Service')}&body=Nom: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
-  window.location.href = mailto;
-  document.getElementById('fsuccess').style.display = 'block';
+  const msg = document.getElementById('fmsg').value.trim();
+ 
+  const success = document.getElementById('fsuccess');
+  const error = document.getElementById('ferror');
+  const btn = document.getElementById('fbtn');
+  success.style.display = 'none';
+  error.style.display = 'none';
+ 
+  if (!name || !email || !msg) {
+    alert('Remplis au moins ton nom, ton email et ton message !');
+    return;
+  }
+ 
+  btn.disabled = true;
+  btn.textContent = t.f_sending;
+ 
+  fetch(FORMSPREE_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      service: service,
+      message: msg
+    })
+  })
+  .then(res => {
+    btn.disabled = false;
+    btn.textContent = t.f_submit;
+    if (res.ok) {
+      success.style.display = 'block';
+      document.getElementById('fname').value = '';
+      document.getElementById('femail').value = '';
+      document.getElementById('fservice').value = '';
+      document.getElementById('fmsg').value = '';
+    } else {
+      error.style.display = 'block';
+    }
+  })
+  .catch(() => {
+    btn.disabled = false;
+    btn.textContent = t.f_submit;
+    error.style.display = 'block';
+  });
 }
-
+ 
 // Init
 setLang('fr');
 </script>
